@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+       .cmenu{
+            display: flex;
+        }
+        .cmenu li {
+            margin-right: 5px;
+            list-style-type: none;
+        }
+        .cabecalho{
+            background-color: lightgrey;
+            border: 10px solid green;
+            border-width: 3px;
+            
+        } 
+     
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <ul class="cmenu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="sobre.html" >SOBRE</a></li>
+            <li>CONTATO</li>
+        </ul>
+    </header>
+    <h1>
+        <center>Formulário de contato</center>
+    </h1>
+    <form action="" method="GET" ">
+        <fieldset>
+                <legend>Cadastro de cliente</legend>
+                <!-- Nome do cliente-->
+                <label for=" idNomeCliente">Nome:</label>
+        <input type="text" id="idNomeCliente" name="nmNomeCliente" maxlength="30" size="30" "Nome completo">
+        <br><br>
+        <!-- Email -->
+        <label for="idEmail">E-mail:</label>
+        <input type="email" id="idEmail" name="nmEmail" maxlength="30" size="30" placeholder="exemplo@endereco.com">
+        <br><br>
+        <!-- Nome da empresa-->
+        <label for="idNomeEmpresa">Nome:</label>
+        <input type="text" id="idNomeEmpresa" name="nmNomeEmpresa" maxlength="30" size="30"
+            placeholder="Nome da empresa">
+        <!-- Telefone -->
+        <label for="idTel">Telefone:</label>
+        <input type="tel" id="idTel" name="nmTel" placeholder="+55 (47)3214-3211"
+            pattern="[0-9]{2}[0-9]{2}[0-9]{4}-[0-9]{4}">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Motivo do contato:</legend>
+            <!-- Motivo do contato: -->
+
+            <input type="radio" id="idRadio1" name="nmRadio" checked>
+            <label for="idRadio1">Comercial</label>
+            <br>
+            <input type="radio" id="idRadio2" name="nmRadio">
+            <label for="idRadio2">Reclamação</label>
+            <br>
+            <input type="radio" id="idRadio3" name="nmRadio">
+            <label for="idRadio3">Sugestão</label>
+            <br>
+            <input type="radio" id="idRadio4" name="nmRadio">
+            <label for="idRadio4">Cancelamento de Assinatura</label>
+            <br>
+            <input type="radio" id="idRadio5" name="nmRadio">
+            <label for="idRadio5">Dúvida</label>
+            <br>
+            <input type="radio" id="idRadio6" name="nmRadio">
+            <label for="idRadio6">Outros</label>
+
+        </fieldset>
+        <br>
+
+        <!-- Caixa de texto de multiplas linhas -->
+        <legend>Seu Comentário (até 100 caracteres): </legend>
+
+        <textarea class="TextoArea" name="nmTextArea" id="idTextArea" cols="30" rows="4" minlength="10" maxlength="100"
+            placeholder="Deixe aqui seu comentário"></textarea>
+        <br>
+        <button type="submit">BT Enviar</button>
+    </form>
+</body>
+</html>
